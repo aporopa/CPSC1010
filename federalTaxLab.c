@@ -93,7 +93,7 @@ taxableIncome = (totalAGI - deduction);
     printf("%-15s%c%7d\n", federalTaxChar, colonChar, (int)round(federalTax)); //because being multiplied by a decimal, value is to be round up and projected as an int
 
 //compute taxes owed
-taxOwed = (int)federalTax - taxesWithheld;
+taxOwed = round(federalTax) - taxesWithheld;
     if(taxOwed >= 0){
         printf("%-15s%c%7d\n", taxOwedChar, colonChar, taxOwed); //taxes owed because it equate to be positive
     }
