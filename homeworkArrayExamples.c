@@ -42,3 +42,32 @@ int main(void) {
    
    return 0;
 }
+
+//different program
+#include <stdio.h>
+
+int main(void) {
+   const int NUM_VALS = 4;
+   int userValues[NUM_VALS];
+   int i;
+   int matchValue;
+   int numMatches = -99; // Assign numMatches with 0 before your for loop
+
+   scanf("%d", &matchValue);
+
+   for (i = 0; i < NUM_VALS; ++i) {
+      scanf("%d", &(userValues[i]));
+   }
+
+   for(i = 0; i < NUM_VALS; ++i){
+      if(matchValue == userValues[i]){
+         ++numMatches;
+      }
+   }
+   
+   numMatches = numMatches + 99; //I feel like there is a better way to do this
+
+   printf("matchValue: %d, numMatches: %d\n", matchValue, numMatches);
+
+   return 0;
+}
