@@ -1,5 +1,6 @@
 /* Abigail Poropatich
 CPSC 1011-02
+Collab: Nick Silva, Arun Chandler, Jonathan Green
 */
 
 #include <stdio.h>
