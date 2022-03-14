@@ -95,3 +95,15 @@ for(i = 0; i < userDigits; ++i){
 
     printf("\n");
 
+//print string in reverse 
+
+fgets(inputString, 50, stdin);
+
+for (int i = strlen(inputString) - 1; i >= 0; i--){ //reverse the string
+            printf("%c", inputString[i]); //print each char backward in order to include spaces
+        }
+
+//code to use whenever using fgets
+if (inputString[strlen(inputString) - 1] == '\n') {
+        inputString[strlen(inputString) - 1] = '\0';
+   }
