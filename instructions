@@ -1,0 +1,27 @@
+Use your Lab 08 as starter code - make changes listed below.
+
+This program will store player roster and rating information for a soccer team using structs and functions.
+
+You will need to modify your Lab 08 code to use a struct named PlayerInfo capable of storing the following data for each player:
+
+First name (max 20 chars)
+Last name (max 20 chars)
+Jersey number
+Rating
+Your main () function should:
+
+Prompt the user for a number of players
+Create an appropriately sized array of player structs
+Call the GetPlayerInfo function to prompt for and store struct array data: first and last name, jersey number and rating
+GetPlayerInfo takes an array of structs and a size variable
+Your switch statement should execute the menu options using the functions listed below -
+PrintRoster - non-value returning, takes an array of structs and a size variable.
+UpdateRating - non-value returning, takes an array of structs and a size variable
+FindAbove - non-value returning, takes an array of structs and a size variable
+ReplacePlayer - non-value returning, takes an array of structs and a size variable
+For full credit, you must use proper formatting (indentation and whitespace) and include appropriate comments in your code.
+
+You will have limited submissions (10), so be sure to test your menu options with different values before you submit for grading.
+You will submit a .c file, rather than using the built-in zyBooks text editor. Once you submit the file, you will be able to see your test results from the autograder.
+As a reminder: you are allowed to collaborate with your lab partners on this lab, but you are NOT allowed to use solutions from online sources, from past students, or from previous semesters.
+HINT: implement your 'Print roster' menu option first. This will give you the ability to see what data is stored in your arrays, and can help with implementing/troubleshooting the other menu options.
